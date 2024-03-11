@@ -1,0 +1,1 @@
+Project for the FMI university course Client-Server applications with Node.js + Express.js + React.js, 2024.
