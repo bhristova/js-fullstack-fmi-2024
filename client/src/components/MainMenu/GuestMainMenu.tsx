@@ -7,7 +7,7 @@ export const GuestMainMenu: React.FC = () => {
       <Logo/>
       <Container >
         <SearchBar />
-        <Link to="/home">Home</Link>
+        <Link to="/">Home</Link>
         <Link to="/login">Login</Link>
       </Container>
     </Menu>

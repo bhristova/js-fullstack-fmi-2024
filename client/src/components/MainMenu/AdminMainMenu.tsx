@@ -7,9 +7,9 @@ export const GuestMainMenu: React.FC = () => {
       <Logo/>
       <Container >
         <SearchBar />
-        <Link to="/home">Home</Link>
+        <Link to="/">Home</Link>
         <Link to="/login">Logout</Link>
-        <Link to="/login">Profile</Link>
+        <Link to="/profile">Profile</Link>
         <Link to="/admin">Admin panel</Link>
       </Container>
     </Menu>

@@ -1,7 +1,7 @@
-import { Container, Link, Menu } from "src/visual"
-import { Taxonomy } from "../../data/types/Taxonomy"
-import { useFetchTaxonomyByUrl } from "src/data"
+import { Container, Link } from "src/visual"
+import { Taxonomy, useFetchTaxonomyByUrl } from "src/data"
 import { useEffect } from "react"
+import * as Styled from './styles'
 
 type Props = {
   taxonomyUrl: string
@@ -12,16 +12,16 @@ export const TaxonomyMenu: React.FC<Props> = ({ taxonomyUrl }) => {
 
   useEffect(() => {
     fetchTaxonomy()
-  }, [taxonomyUrl])
+  }, [fetchTaxonomy, taxonomyUrl])
 
   if (!taxonomy) return null
 
   return (
-    <Menu>
+    <Styled.Menu>
       <Container>
         {renderTaxonomy(taxonomy)}
       </Container>
-    </Menu>
+    </Styled.Menu>
   )
 }
 

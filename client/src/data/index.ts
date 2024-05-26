@@ -1,2 +1,2 @@
-export * from './api/taxonomy'
+export * from './api'
 export * from './types'

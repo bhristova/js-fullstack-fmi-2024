@@ -8,6 +8,7 @@ type Props = {
     $mr?: React.CSSProperties['marginRight']
     $justifyContent?: React.CSSProperties['justifyContent']
     $alignItems?: React.CSSProperties['alignItems']
+    $gap?: React.CSSProperties['gap']
 }
 
 export const Container = styled.div<Props>`
@@ -31,5 +32,8 @@ export const Container = styled.div<Props>`
     `};
     ${({ $alignItems }) => $alignItems && css`
         align-items: ${$alignItems};
+    `};
+    ${({ $gap }) => $gap && css`
+        gap: ${$gap};
     `};
 `

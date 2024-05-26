@@ -10,6 +10,11 @@ const theme = {
     vanilla: "#f2ebae",
     black: "#000",
   },
+  breakpoints: {
+    mobile: "320",
+    tablet: "768",
+    desktop: "1024"
+  },
 }
 
 type Props = {
